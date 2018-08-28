@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net45;netstandard1.5;netstandard1.6;netstandard2.0</TargetFrameworks>
+    <Authors>Kalmar Germany GmbH</Authors>
+    <Description>Wrapper for BlueTracker Reporting public API</Description>
+    <Copyright>Copyright © 2018</Copyright>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/NavisCarrierSolutions/BlueTracker.SDK.Reporting/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/NavisCarrierSolutions/BlueTracker.SDK.Reporting</PackageProjectUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Core\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net45'">
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+</Project>
