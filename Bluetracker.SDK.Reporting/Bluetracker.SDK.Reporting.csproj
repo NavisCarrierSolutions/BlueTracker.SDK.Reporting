@@ -8,6 +8,7 @@
     <PackageLicenseUrl>https://raw.githubusercontent.com/NavisCarrierSolutions/BlueTracker.SDK.Reporting/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/NavisCarrierSolutions/BlueTracker.SDK.Reporting</PackageProjectUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
