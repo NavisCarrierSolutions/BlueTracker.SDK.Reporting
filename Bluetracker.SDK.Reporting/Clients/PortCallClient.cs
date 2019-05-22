@@ -52,12 +52,15 @@ namespace Bluetracker.SDK.Reporting.Clients
         /// Returns a list of PortCalls.
         /// </summary>
         /// <param name="imoNumber">IMO number of the ship.</param>
+        /// <param name="startDate">The start DateTime</param>
+        /// <param name="endDate">The end DateTime</param>
+        /// <param name="includeDeleted">Include deleted?</param>
         /// <returns>
         /// A list of PortCall objects, which belong to the ship with the given IMO number
         /// </returns>
-        public List<PortCall> GetAll(int imoNumber)
+        public List<PortCall> GetAll(int imoNumber, DateTime? startDate = null, DateTime? endDate = null, bool includeDeleted = false)
         {
-            return _portCallWrapper.GetAll(imoNumber);
+            return _portCallWrapper.GetAll(imoNumber, startDate, endDate, includeDeleted);
         }
 
         /// <summary>
